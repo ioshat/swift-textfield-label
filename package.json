@@ -1,0 +1,16 @@
+{
+  "name": "ioshat-swift-textfield-label",
+  "title": "Text Field Label (Swift)",
+  "version": "0.0.1",
+  "description": "Template for Text Field Label in Swift",
+  "scope": "source.swift",
+  "main": "main.coffee",
+  "category": "label",
+  "layerType": ["textLayer"],
+  "author": "Tomas Ruzicka <tomasruzicka@abdoc.net> (https://github.com/lezuse)",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "bundledDependencies": [
+  ]
+}
