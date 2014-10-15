@@ -23,13 +23,12 @@ var helpers = {
     },
     swiftFont: function(chunk, ctx, bodies, params) {
       var baseTextStyle = ctx.get('baseTextStyle');
-      return chunk.write(baseTextStyle.font.name);
+      return chunk.write(baseTextStyle.font.postScriptName || baseTextStyle.font.name);
     },
-    // 'NSLocalizedString("'+this.name+'", comment: "")'
     nsLocalizedString: function(data) {
       var loc = data.options['localizedString'] ? true : false;
       return loc ?
-        'NSLocalizedString("' + data.text + '", nil)' :
+        'NSLocalizedString("' + data.text + '", comment: "")' :
         '"' + data.text + '"';
     }
 };
